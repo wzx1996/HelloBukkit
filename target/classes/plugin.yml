@@ -1,0 +1,3 @@
+name: HelloPlugin
+main: biz.timecity.flamerat.bukkit.helloplugin.HelloPlugin
+version: 0.0.1
