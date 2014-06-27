@@ -1,4 +1,4 @@
-package helloplugin;
+package biz.timecity.flamerat.bukkit.helloplugin;
 
 import org.bukkit.plugin.java.JavaPlugin;
 
