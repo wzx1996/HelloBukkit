@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>biz.timecity.flamerat.bukkit</groupId>
   <artifactId>HelloBukkit</artifactId>
-  <version>0.0.2</version>
+  <version>0.0.3</version>
   <build>
       <plugins>
           <plugin>

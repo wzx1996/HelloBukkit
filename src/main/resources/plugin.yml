@@ -1,9 +1,15 @@
 name: HelloPlugin
+author: FlameRat
 main: biz.timecity.flamerat.bukkit.helloplugin.HelloPlugin
-version: 0.0.2
+version: 0.0.3
 commands:
   testcommand:
     description: Just a test command. Give you some message then do nothing.
     usage: /<command>
     permission: <plugin name>.testcommand
+    permission-message: You don't have <permission>
+  testecho:
+    description: Echo stuffs as the classical echo command. Who needs it?
+    usage: /<command> <...>
+    permission: <plugin name>.testecho
     permission-message: You don't have <permission>
