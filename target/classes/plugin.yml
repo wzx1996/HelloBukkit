@@ -1,3 +1,9 @@
 name: HelloPlugin
 main: biz.timecity.flamerat.bukkit.helloplugin.HelloPlugin
-version: 0.0.1
+version: 0.0.2
+commands:
+  testcommand:
+    description: Just a test command. Give you some message then do nothing.
+    usage: /<command>
+    permission: <plugin name>.testcommand
+    permission-message: You don't have <permission>
