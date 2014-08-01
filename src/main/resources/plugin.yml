@@ -1,7 +1,7 @@
 name: HelloPlugin
 author: FlameRat
 main: biz.timecity.flamerat.bukkit.helloplugin.HelloPlugin
-version: 0.0.3
+version: {$VersionNumber}
 commands:
   testcommand:
     description: Just a test command. Give you some message then do nothing.
@@ -16,5 +16,10 @@ commands:
   getcoord:
     description: Get your own coord! If you are a player entity.
     usage: /<command>
+    permission: <plugin name>.getcoord
+    permission-message: You don't have <permission>
+  walkspeed:
+    description: Get your own coord! If you are a player entity.
+    usage: /<command> <speed>
     permission: <plugin name>.getcoord
     permission-message: You don't have <permission>

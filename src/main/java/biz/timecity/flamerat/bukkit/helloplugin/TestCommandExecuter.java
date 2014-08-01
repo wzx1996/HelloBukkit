@@ -32,13 +32,22 @@ public class TestCommandExecuter implements CommandExecutor {
     	else if (cmd.getName().equalsIgnoreCase("getcoord")){
     		if (!(sender instanceof Player)){
     			sender.sendMessage("You are not a player and i can't show you a coord");
-    			break;
+    			return false;
     		}
-    		Location loc=sender.getLocation();
+    		Location loc=((Player) sender).getLocation();
     		sender.sendMessage("x="+loc.getX()+" y="+loc.getY()+" z="+loc.getZ());
     		return true;
     	}
-    	//@command:"setwalkspeed <speed>"
+    	//@command:"walkspeed <speed>"
+    	else if (cmd.getName().equalsIgnoreCase("walkspeed")){
+    		if (!(sender instanceof Player)){
+    			sender.sendMessage("You are not a player");
+    			return false;
+    		}
+    		float speed=Float.parseFloat(args[0]);
+    		((Player) sender).setWalkSpeed(speed);
+    		sender.sendMessage("Walk speed set to "+speed);
+    	}
     	return false; 
     }
 
