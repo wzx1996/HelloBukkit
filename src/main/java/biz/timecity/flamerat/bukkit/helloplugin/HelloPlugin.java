@@ -16,6 +16,7 @@ public final class HelloPlugin extends JavaPlugin {
     	////register commands start////
     	getCommand("testcommand").setExecutor(new TestCommandExecuter());
     	getCommand("testecho").setExecutor(new TestCommandExecuter());
+    	getCommand("getcoord").setExecutor(new TestCommandExecuter());
     	////register commands end////
     	
     }

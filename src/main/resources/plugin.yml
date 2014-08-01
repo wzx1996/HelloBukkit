@@ -13,3 +13,8 @@ commands:
     usage: /<command> <...>
     permission: <plugin name>.testecho
     permission-message: You don't have <permission>
+  getcoord:
+    description: Get your own coord! If you are a player entity.
+    usage: /<command>
+    permission: <plugin name>.getcoord
+    permission-message: You don't have <permission>
